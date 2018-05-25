@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+  <script>
+    /*
+     ① //创建函数方式一 函数声明
+     function 函数名(){     //函数名和变量名的命名规则规范一样
+        //函数体
+     }
+      函数创建完后，函数体中的代码不会执行，只用调用时才会执行
+      调用函数:函数名();
+    */
+
+    /*
+     功能：打印1-100之间所有偶数
+     */
+    function printEven() { //创建函数
+      for (var num = 1; num <= 100; num++) {
+        if (num % 2 == 0) {
+          document.write('<p>' + num + '</p>')
+        }
+      }
+    }
+
+    //如果要在多个地方求1-100之间所有偶数，应该怎么做？
+    document.write('<h2>--------地方1----------</h2>');
+    printEven(); //调用
+    document.write('<h2>--------地方2----------</h2>');
+    printEven();//调用
+    document.write('<h2>--------地方3----------</h2>');
+    printEven();//调用
+    document.write('<h2>--------地方4----------</h2>');
+    printEven();//调用
+  </script>
+</head>
+<body>
+
+</body>
+</html>

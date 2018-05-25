@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+  <script>
+    //练习8：计算n-m之间所有数字的和。 用函数封装。【中午作业】
+
+
+    /*
+     功能：计算n-m之间所有数字的和
+     参数：
+     n 起始数字  number
+     m 结束数字  number
+     */
+    function getSum(n, m) {
+      var sum = 0; //总和
+      for (var num = n; num <= m; num++) {
+        sum = sum + num;
+      }
+      console.log(sum);
+    }
+
+    getSum(200, 500);
+    getSum(100, 102);
+  </script>
+</head>
+<body>
+
+</body>
+</html>

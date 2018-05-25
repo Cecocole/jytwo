@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+  <script>
+    //练习9：在不同的地方，以不同的颜色打印n-m之间所有数字的和。用函数封装并返回结果。
+    /*
+     功能：计算n-m之间所有数字的和
+     参数：
+     n 起始数字  number
+     m 结束数字  number
+     返回值：有 number
+     */
+    function getSum(n, m) {
+      var sum = 0; //总和
+      for (var num = n; num <= m; num++) {
+        sum = sum + num;
+      }
+      return sum;
+    }
+    document.write('<h2>地方1</h2>');
+    var r1 = getSum(100,200); //结果
+    document.write('<p style="color:red">'+r1+'</p>');
+
+    document.write('<h2>地方2</h2>');
+    var r2 = getSum(1000,2000); //结果
+    document.write('<p style="color:blue">'+r2+'</p>');
+
+    document.write('<h2>地方3</h2>');
+
+    document.write('<h2>地方4</h2>');
+  </script>
+</head>
+<body>
+
+</body>
+</html>
